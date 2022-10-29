@@ -2,7 +2,7 @@
 ## Utilidade
 Este projeto se trata de um site de produtos com um carrinho de compras.
 
-##Imagens do Projeto
+## Imagens do Projeto
 
 ![image](https://user-images.githubusercontent.com/70536827/198803073-8a2ab132-c740-4e0d-b590-391bf81c2b26.png)
 
