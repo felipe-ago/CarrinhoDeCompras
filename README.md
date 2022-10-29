@@ -1,5 +1,5 @@
 # CarrinhoDeCompras
-## Utilidade
+
 Este projeto se trata de um site de produtos com um carrinho de compras.
 
 ## Imagens do Projeto
