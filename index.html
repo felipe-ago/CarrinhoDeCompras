@@ -1,29 +1,113 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrinho de Compras</title>
-    <link rel="stylesheet" href="/style.css">
-</head>
-<header>
-    <h1>Loja Fictícia</h1>
-    <div class="menu">
-        <span>0</span>
-        <img src="/images/carIcon.png">
-    </div>
-</header>
+    <link rel="icon" href="images/carIcon.png" />
 
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
 <body>
-    <div class="header"></div>
-    <!--Conteúdo Principal-->
-    <div class="main">
-        <h1>Produtos</h1>
-        <button class="adicionar">ADD</button>
-        <div class="area-produto">
+
+    <!-- Produtos na Lista e no Carrinho -->
+    <div class="produtos">
+
+        <!-- Produtos na Lista -->
+        <div class="produtos-lista">
+            <a href="">
+                <div class="produtos-lista-img"><img src="" /></div>
+                <div class="produtos-lista-add">+</div>
+            </a>
+            <div class="produtos-lista-preco">R$ --</div>
+            <div class="produtos-lista-name">--</div>
+            <div class="produtos-lista-desc">--</div>
+        </div>
+
+        <!-- pizza no carrinho -->
+        <div class="carrinho-lista">
+            <img src="" />
+            <div class="carrinho-lista-nome">--</div>
+            <div class="carrinho-lista-qtarea">
+                <button class="carrinho-lista-qtmenos">-</button>
+                <div class="carrinho-lista-qt">1</div>
+                <button class="carrinho-lista-qtmais">+</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- /produtos -->
+
+    <!-- .menu aparecera no modo mobile -->
+    <header>
+        <h1>Loja Fictícia</h1>
+        <div class="menu"><span>0</span>🛒</div>
+    </header>
+    <!-- /menu -->
+
+    <!-- conteudo principal -->
+    <main>
+        
+        <h2>Produtos</h2>
+
+        <div class="produto-area"></div>
+    </main>
+    <!-- /conteudo principal -->
+
+    <!-- aside do carrinho -->
+    <aside>
+        <div class="carrinho-area">
+            <div class="menu-fechar">❌</div>
+            <h1>Suas Pizzas</h1>
+            <div class="carrinho"></div>
+            <div class="carrinho-detales">
+                <div class="carrinho-totalItem subtotal">
+                    <span>Subtotal</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="carrinho-totalItem desconto">
+                    <span>Desconto</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="carrinho-totalItem total big">
+                    <span>Total</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="carrinho-finalizar">Finalizar a compra</div>
+            </div>
+        </div>
+    </aside>
+    <!-- /aside do carrinho -->
+
+    <!-- janela modal .produtoJanelaArea -->
+    <div class="produtoJanelaArea">
+        <div class="produtoJanelaBody">
+            <div class="produtoInfo-cancelarMobileButton">Voltar</div>
+            <div class="produtoGrande">
+                <img src="" />
+            </div>
+            <div class="produtoInfo">
+                <h1>--</h1>
+                <div class="produtoInfo-desc">--</div>
+                <div class="produtoInfo-precoArea">
+                    <div class="produtoInfo-setor">Preço</div>
+                    <div class="produtoInfo-preco">
+                        <div class="produtoInfo-precoAtual">R$ --</div>
+                        <div class="produtoInfo-qtarea">
+                            <button class="produtoInfo-qtmenos">-</button>
+                            <div class="produtoInfo-qt">1</div>
+                            <button class="produtoInfo-qtmais">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="produtoInfo-addButton">Adicionar ao carrinho</div>
+                <div class="produtoInfo-cancelarButton">Cancelar</div>
+            </div>
         </div>
     </div>
-</body>
+    <!-- /janela modal .produtoJanelaArea -->
 
+    <script src="/js/produtos.js"></script>
+    <script src="js/script.js"></script>
+</body>
 </html>
