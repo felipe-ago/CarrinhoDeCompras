@@ -73,6 +73,7 @@ const mudarQuantidade = () => {
     seleciona('.produtoInfo-qtmais').addEventListener('click', () => {
         quantProdutos++
         seleciona('.produtoInfo-qt').innerHTML = quantProdutos
+
     })
 
     seleciona('.produtoInfo-qtmenos').addEventListener('click', () => {
@@ -193,6 +194,7 @@ const atualizarCarrinho = () => {
 				console.log('Clicou no botão mais')
 				// adicionar apenas a quantidade que esta neste contexto
 				carrinho[i].qt++
+                seleciona('.menu span').innerHTML = carrinho.length
 				// atualizar a quantidade
 				atualizarCarrinho()
 			})
